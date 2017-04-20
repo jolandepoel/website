@@ -1,0 +1,32 @@
+---
+title: My first post
+author: Jolande Poel
+date: '2017-04-20'
+slug: my-first-post
+categories:
+  - intro
+tags:
+  - R Markdown
+  - plot
+  - example
+summary: "An introduction post to see how this works."
+---
+
+Hi! My name is Jolande and I just succesfully made this site. Finally. After having a run-in with git submodules. Again.  
+  
+I wanted to try out some R code to see if this all works correctly:
+```{r}
+data("iris")
+library(tidyverse)
+```
+
+```{r}
+head(iris)
+```
+
+```{r}
+ggplot(data = iris) + 
+  geom_point(mapping = aes(x = Sepal.Length, y = Sepal.Width, color = Species))
+```
+  
+Since that all seems to work fine, I think I can update my categories and so forth.
