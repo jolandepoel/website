@@ -114,6 +114,7 @@ Als je op het venster met pijltje klikt in de Viewer opent je site in een webbro
 
 Als je klaar bent, klik je op het STOP bordje.
 Als je helemaal tevreden bent, moet alles nog geupload worden.
+Mocht je content verwijderd hebben, dan moet je dat ook handmatig uit de public directory verwijderen, voor je je site herbouwt.
 Bouw eerst je site in RStudio met:
 ---
 blogdown::build_site()
