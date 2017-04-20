@@ -1,0 +1,12 @@
+Voor updates:
+
+Doe je werk in RStudio in het blog project en run vervolgens
+blogdown::build_site()
+Commit changes in GitHub Desktop onder 'changes' alles behalve het /public directory. Update YYYY-MM-DD. <eventuele beschrijving> en sync.
+Start Git Shell (cmd) vanuit GitHub Desktop in blog root directory.
+cd public
+git add .
+git commit -m "Build website <YYYY-MM-DD>"
+git push -u origin master
+
+Check updated site at jolandepoel.github.io
