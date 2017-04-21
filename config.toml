@@ -171,12 +171,12 @@ defaultContentLanguageInSubdir = false
 [[menu.main]]
   name = "Learning"
   url = "#learning"
-  weight = 4
   identifier = "learning"
   
 [[menu.main]]
   name = "Data Science courses"
   url = "#data-science"
+  weight = 4
   parent = "learning"
 
 [[menu.main]]
