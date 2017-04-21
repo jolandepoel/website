@@ -121,13 +121,15 @@ blogdown::build_site()
 ---
 
 Ga vervolgens naar GitHub Desktop en klik op je website repository, 
-klik op changes, vink public uit(!) en commit changes. Rechtsboven klik op Sync. (Dit is push en pull van Git in 1)
+klik op changes, vink public uit(!) en commit changes.
+"Update YYYY-MM-DD"
+Rechtsboven klik op Sync. (Dit is push en pull van Git in 1)
 Klik op het gear icoon en open een Git Shell.
 Voer hier achtereenvolgens in:
 ---
 cd public
 git add .
-git commit -m "<je site commit berichtje>"
+git commit -m "Build site YYYY-MM-DD"
 git push -u origin master
 ---
 
