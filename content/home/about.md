@@ -27,6 +27,6 @@ weight = 10
 
 # Biography
 
-I'm an aspiring data scientist and currently Data Science Specialist student at ITvitae. I love learning things online through MOOCs. I also love card making and other crafts, volleyball, and cooking.  
+I'm an aspiring data scientist and currently Data Science Specialist student at ITvitae. I love learning things online through MOOCs. I also love card making and other crafts, yoga, and cooking.  
 
 
