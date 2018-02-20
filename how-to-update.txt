@@ -14,17 +14,21 @@ Bouw eerst je site in RStudio met:
 In het Environment pane, selecteer 'Build' ipv 'Environment' en klik op de button "Build Website"
 of blogdown::build_site()
 ---
-Ga vervolgens naar GitHub Desktop en selecteer je website repository,
-vul in de vakjes eronder een naam in: "Update YYYY-MM-DD" en een beschrijving. 
+
+Ga vervolgens naar GitHub Desktop en selecteer je username.github.io repository,
+vul in de vakjes eronder een naam in: "Build site YYYY-MM-DD" en een beschrijving. 
 Klik op commit.
 Rechtsboven klik op Push/Fetch/Sync. (Dit is push en pull van Git in 1)
+Of
 Klik in het menu op Repository -> Open in Command Prompt
 Voer hier achtereenvolgens in:
 ---
-cd public
 git add .
 git commit -m "Build site YYYY-MM-DD"
 git push -u origin master
 ---
 
 Je site staat online en is te bewonderen op https://jolandepoel.github.io/
+
+Je kan ook de source files in het website repository volgens dezelfde methode updaten. 
+Gebruik als naam "Update YYYY-MM-DD"
