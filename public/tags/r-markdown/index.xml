@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R Markdown on Jolande Poel</title>
+    <link>/tags/r-markdown/</link>
+    <description>Recent content in R Markdown on Jolande Poel</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017 Jolande Poel</copyright>
+    <lastBuildDate>Thu, 20 Apr 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/r-markdown/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>My first post</title>
+      <link>/post/my-first-post/</link>
+      <pubDate>Thu, 20 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/post/my-first-post/</guid>
+      <description>Hi! My name is Jolande and I just succesfully made this site. Finally. After having a run-in with git submodules. Again.
+I wanted to try out some R code to see if this all works correctly:
+data(&amp;quot;iris&amp;quot;)library(tidyverse)## -- Attaching packages ---------------------------------------------------------------------------------------------- tidyverse 1.2.1 --## v ggplot2 2.2.1 v purrr 0.2.4## v tibble 1.4.2 v dplyr 0.7.4## v tidyr 0.8.0 v stringr 1.2.0## v readr 1.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,66 @@
+/*************************************************
+ *  A homemade pink theme for Hugo Academic
+ *  Find custom_css and set `custom_css = ["pink.css"] in `config.toml`.
+ *  Then save this file as `/static/css/pink.css` relative to your website root (i.e. not in `themes/academic` directory).
+ *  https://github.com/gcushen/hugo-academic
+ **************************************************/
+
+a,
+a:visited,
+h3.article-title a:hover {
+    color: #ce517c;
+}
+
+a:hover {
+    color: #f5a3b1;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+  color: #e47e95;
+  font-weight: 700;
+  background-color: transparent !important;
+}
+
+.navbar-default .navbar-nav li a:hover,
+.btn-primary,
+.btn-primary.btn-outline {
+    color: #e47e95;
+}
+
+/* Articles */
+
+.article-title a {
+    color: #151515;
+}
+
+.article-metadata a {
+    color: #808080;
+}
+
+.article-metadata a:hover {
+    color: #e47e95;
+}
+
+/* Standard buttons */
+
+.btn-primary,
+.btn-primary.btn-outline {
+    border-color: #e47e95;
+}
+
+/* Hover buttons */
+
+.btn-primary.btn-outline:hover {
+    border-color: #e47e95;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary:visited,
+.btn-primary.btn-outline:active {
+    background-color: #e47e95;
+}
