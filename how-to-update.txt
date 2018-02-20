@@ -1,0 +1,30 @@
+Voor updates:
+-------------
+Werk altijd in je website RStudio project.
+Nadat je weer een nieuwe post hebt toegevoegd (Addins > new post in de toolbar) of iets anders hebt gewijzigd, kan je kijken of alles naar wens is door deze code in te voeren:
+---
+blogdown::serve_site() of Addins > Serve Site in de toolbar.
+---
+Als je op het venster met pijltje klikt in de Viewer opent je site in een webbrowser. Tijdens deze tijdelijke server op je lokale computer toestand, kan je wijzigingen aanbrengen en opslaan en worden deze automatisch weergegeven. 
+
+Als je helemaal tevreden bent, moet alles nog geupload worden.
+Mocht je content verwijderd hebben, dan moet je dat ook handmatig uit de public directory verwijderen, voor je je site herbouwt.
+Bouw eerst je site in RStudio met:
+---
+In het Environment pane, selecteer 'Build' ipv 'Environment' en klik op de button "Build Website"
+of blogdown::build_site()
+---
+Ga vervolgens naar GitHub Desktop en selecteer je website repository,
+vul in de vakjes eronder een naam in: "Update YYYY-MM-DD" en een beschrijving. 
+Klik op commit.
+Rechtsboven klik op Push/Fetch/Sync. (Dit is push en pull van Git in 1)
+Klik in het menu op Repository -> Open in Command Prompt
+Voer hier achtereenvolgens in:
+---
+cd public
+git add .
+git commit -m "Build site YYYY-MM-DD"
+git push -u origin master
+---
+
+Je site staat online en is te bewonderen op https://jolandepoel.github.io/

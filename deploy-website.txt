@@ -1,0 +1,153 @@
+Let op! Dingen tussen <> zijn variabelen: voer je eigen waardes in.
+===============================================================
+* Stap 1: installeer R, RStudio, Git, set up RStudio with Git
+===============================================================
+Installeer R
+Installeer RStudio
+Creeer een GitHub account
+Installeer Git for Windows met GitHub Desktop
+Start RStudio op
+Set-up Git in RStudio
+Installeer Blogdown in RStudio
+---
+install.packages("blogdown")
+---
+
+===============================================================
+* Stap 2: creeer project & repository
+===============================================================
+Creeer eerst een nieuw project in een new directory en selecteer daarvoor "Website using blogdown" ipv "New Project". Verzin een logische (makkelijk terug te vinden) subdirectory. Ik heb mijn Directory website genoemd.
+Creeer het als een subdirectory van een makkelijk terug te vinden directory.
+
+Vink de relavante opties aan en kies een thema. Ik heb gekozen voor gcushen/hugo-academic
+
+
+
+?>> Git initialiseren vanuit RStudio
+
+
+
+
+Ga naar het tabje 'Git' in het 'Environment' pane rechtsboven, klik de vinkjes aan (duurt even) en commit de veranderingen met een message. Laat RStudio open staan.
+
+Open GitHub Desktop for Windows en klik op File > Add local repository.. . Klik add en vervolgens browse en navigeer naar je RStudio Project folder, klik deze aan, en klik Add repository. Klik publish bovenaan rechts in de donkere balk. Voeg eventueel een description toe en klik Publish website.
+
+Ga in je webbrowser naar github.com/<username> (vul in je username) om te kijken of dit allemaal gelukt is en je een nieuwe repository ziet met de naam 'website'.
+
+===============================================================
+* Stap 3: creeer je site
+===============================================================
+Ga terug naar je open RStudio project en voer deze code in in de console (code tussen ---) om blogdown te installeren:
+(Mocht je blogdown al hebben, sla deze code over)
+---
+Installeer blogdown vanaf CRAN
+install.packages("blogdown")
+---
+Voer daarna deze code in:
+---
+# Deze code installeert de laatste versie van Hugo
+blogdown::install_hugo()
+
+Voer vervolgens deze code in:
+---
+# Deze code maakt het 'skelet' van je website, met de academic theme
+blogdown::new_site(theme = "gcushen/hugo-academic")
+---
+Er is automatisch een blogdown voorbeeld post gecreeerd en geopend met de titel <datum>-r-markdown.Rmd, deze kan je sluiten.
+Je site wordt geopend in het Viewer venster rechts. Klik in de R console op het STOP bordje om je tijdelijke hugo server weer te stoppen.
+
+Gefeliciteerd! Een basis site staat klaar om naar jouw voorkeuren aan te passen. Echter, hij staat nog niet online, dat is de volgende stap.
+
+===============================================================
+* Stap 4: zet je site online
+===============================================================
+Op github.com/<username> staat een tabje "Repositories" klik daarop.
+Klik vervolgens rechts op de grote groene knop "New" vul vervolgens als naam <username>.github.io in (vervang <username> overal met je eigen gebruikersnaam), voeg eventueel een beschrijving toe en vink "initialize this repository with a readme" aan. Klik op create repository.
+
+Open je config.toml file in RStudio, door naar files in het venster rechtsonder te navigeren en dan op config.toml te klikken.
+Pas vervolgens baseurl (helemaal bovenaan) aan naar "https://<username.github.io/" (inclusief quotes). Sla de file op.
+
+Delete vervolgens in het tab Files rechtsonder de filefolder public.
+
+Terug naar GitHub Desktop, selecteer je website repository. Klik rechtsboven op het gear icoon -> Options en selecteer onder Default shell "Cmd" Klik op Save.
+
+Klik nogmaals op het gear icoon en klik op "Open in Git Shell"
+Als het goed is opent een Windows command line venster met al jouw <...\website> directory als prompt.
+
+Commit eerst alle changes:
+---
+git add .
+git commit -m "<je site commit berichtje>"
+git push -u origin master
+---
+
+We gaan <username>.github.io toevoegen als submodule in de folder public, voer in cmd in:
+---
+git submodule add https://github.com/<username>/<username>.github.io.git public
+---
+Laat dit window open staan.
+
+Ga terug naar RStudio en voer in:
+---
+blogdown::build_site()
+---
+Dit zorgt er voor dat de public folder wordt gevuld met je daadwerkelijke site.
+Terug in GitHub Desktop Git Shell:
+---
+cd public
+git add .
+git commit -m "Build site"
+git push -u origin master
+--- 
+
+Nu kan je je website aanpassen aan al je voorkeuren,
+Je kan een .Rprofile bestand toevoegen door de code:
+---
+file.edit(".Rprofile")
+---
+met daarin:
+---
+options(blogdown.author = "<naam>")
+options(blogdown.rmd = "TRUE")
+---
+Dit zorgt ervoor dat als je in RStudio "tools -> addins -> new post" voor een nieuwe blogpost gebruikt, dat er automatisch wat dingen ingevuld zijn.
+
+Denk er aan om het config.toml file helemaal door te nemen en al je voorkeuren toe te voegen/te veranderen, update vervolgens about.md die je kan vinden in content/home en doe eventueel andere wijzigingen zoals aangeraden en uitgelegd op: https://gcushen.github.io/hugo-academic-demo/post/getting-started/#getting-started
+
+===============================================================
+* Stap 5: al je wijzigingen uploaden (herhaal elke keer)
+===============================================================
+Werk altijd in je website RStudio project.
+Nadat je weer een nieuwe post hebt toegevoegd (tools > addins > new post) of iets anders hebt gewijzigd, kan je kijken of alles naar wens is door deze code in te voeren:
+---
+blogdown::serve_site()
+---
+Als je op het venster met pijltje klikt in de Viewer opent je site in een webbrowser. Tijdens deze tijdelijke server op je lokale computer toestand, kan je wijzigingen aanbrengen en opslaan en worden deze automatisch weergegeven. 
+
+Als je klaar bent, klik je op het STOP bordje.
+Als je helemaal tevreden bent, moet alles nog geupload worden.
+Mocht je content verwijderd hebben, dan moet je dat ook handmatig uit de public directory verwijderen, voor je je site herbouwt.
+Bouw eerst je site in RStudio met:
+---
+blogdown::build_site()
+---
+
+Ga vervolgens naar GitHub Desktop en klik op je website repository, 
+klik op changes, vink public uit(!) en commit changes.
+"Update YYYY-MM-DD"
+Rechtsboven klik op Sync. (Dit is push en pull van Git in 1)
+Klik op het gear icoon en open een Git Shell.
+Voer hier achtereenvolgens in:
+---
+cd public
+git add .
+git commit -m "Build site YYYY-MM-DD"
+git push -u origin master
+---
+
+Je site staat online en is te bewonderen op https://<username>.github.io/
+
+
+
+
+

@@ -1,0 +1,10 @@
+Color combo
+#730e1f - very dark red
+#d23859 - dark pinkish red
+#da4c63 - dark pinkish red
+#ff7b90 - light pinkish red
+
+#ce517c - dark pink
+#e47e95 - medium pink
+#f5a3b1 - light pink
+#f8d6e0 - very light pink
