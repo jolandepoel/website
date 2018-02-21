@@ -1,0 +1,61 @@
+---
+title: Data Science Specialist training
+author: Jolande Poel
+date: '2017-06-12'
+categories:
+  - education
+  - itvitae
+tags:
+  - R
+  - subjects
+slug: ds-specialist
+summary: A summary of the ITvitae Data Science Specialist training I completed in
+  2017.
+image_preview: sakura.jpg
+---
+
+# Data Science Specialist course complete
+
+With the help of ITvitae Learning in Amersfoort, I successfully completed my Data Science Specialist course.
+We started 16 January 2017 and finished on 3 June 2017.
+It's now named Data Science Professional and the subjects have changed a bit. The subjects I had were:
+
+* Introduction Statistics and Data Analysis taught by Wobbe Zijlstra
+* Programming in R taught by Wobbe Zijlstra and Hicham Zmarrou
+* Graphical Analysis taught by Edwin de Jonge
+* Statistical Learning taught by Wobbe Zijlstra
+* Machine Learning taught by Hicham Zmarrou
+* Text Analysis taught by Mark van der Loo
+* Time series and Trend Analysis taught by Jan van der Laan
+* Working with Big Data taught by Bas van Zelst
+
+## Introduction to Statistics and Data Analysis
+In this 6-day course spread over 3 weeks we learned the basics of statistics including mean, median, mode, ANOVA and basic graphs.
+
+
+## Programming in R
+In this 4-day course spread over 2 weeks we learned 
+
+
+## Graphical Analysis
+In this 3-day course taught in 1 week we learned the package ggplot2, base R graphics and maps.
+
+
+## Statistical Learning
+In this 4-day course spread over 2 weeks we learned 
+
+
+## Machine Learning
+In this 4-day course spread over 2 weeks we learned
+
+
+## Text Analysis
+In this 3-day course taught in 1 week we learned 
+
+
+## Time series and Trend Analysis
+In this 4-day course spread over 2 weeks we learned
+
+
+## Working with Big Data
+In this 2-day course taught in 1 week we learned

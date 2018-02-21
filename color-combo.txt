@@ -4,6 +4,8 @@ Color combo
 #da4c63 - dark pinkish red
 #ff7b90 - light pinkish red
 
+
+#bc3c68 - very dark pink
 #ce517c - dark pink
 #e47e95 - medium pink
 #f5a3b1 - light pink

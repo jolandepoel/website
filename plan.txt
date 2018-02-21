@@ -1,0 +1,8 @@
+[ ] Lees en volg de instructies op de 'Getting Started' sectie in deze Example site.
+
+[ ] Kopieer (niet knip) de relevante data, posts en aangepaste secties (about.md) van website_back-up naar website en controleer functionaliteit na elke aanpassing. blogdown::serve_site()
+ [ ] Configureer config.toml
+ [ ] Pas about.md aan of kopieer en plak
+ [ ] Pas secties e.d. aan want dat werkte niet met een simpele kopieer.
+
+[ ] Kijk hoe je de Academic Install Now optie wegkrijgt

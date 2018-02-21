@@ -29,6 +29,8 @@ googleAnalytics = "UA-97666799-1"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
 
+
+
 [outputs]
   home = [ "HTML", "CSS", "RSS" ]
   section = [ "HTML", "RSS" ]
@@ -42,8 +44,8 @@ defaultContentLanguageInSubdir = false
 
 [params]
   # Color theme.
-  #   Choose from `default`, `ocean`, `forest`, `coffee`, `dark`, or `1950s`.
-  color_theme = "default"
+  #   Choose from `default`, `ocean`, `forest`, `coffee`, `dark`, `1950s`, or `pink`
+  color_theme = "pink"
 
   # Font style.
   #   Choose from `default`, `classic`, or `playfair`.
@@ -51,7 +53,7 @@ defaultContentLanguageInSubdir = false
 
   # Your details.
   name = "Jolande Poel"
-  role = "Data Science Specialist in opleiding"
+  role = "Data Science Specialist"
 
   # Organizations/Affiliations.
   #   Separate multiple entries with a comma, using the form: `[ {name="Org1", url=""}, {name="Org2", url=""} ]`.
@@ -60,7 +62,7 @@ defaultContentLanguageInSubdir = false
   gravatar = false  # Get your avatar from Gravatar.com? (true/false)
   avatar = "portrait.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
   email = "jolandepoel@itvitaelearning.nl"
-  address = ""
+  address = "Enschede, the Netherlands"
   office_hours = ""
   phone = ""
   skype = ""
@@ -92,17 +94,17 @@ defaultContentLanguageInSubdir = false
   #   1: Google Maps
   #   2: OpenStreetMap (Mapnik)
   #   3: OpenStreetMap (Mapbox)
-  map = 0
-  map_api_key = ""
-  latitude = "37.4275"
-  longitude = "-122.1697"
+  map = 1
+  map_api_key = "AIzaSyB4XcyszL_KsMngXNe1d54sCYGVUgr5QRA"
+  latitude = "52.235304"
+  longitude = "6.890577"
   zoom = 15
 
   # Date and time format (refer to Go's date format: http://fuckinggodateformat.com )
   #   Examples: "Mon, Jan 2, 2006" or "2006-01-02"
   date_format = "Jan 2, 2006"
   #   Examples: "3:04 pm" or "15:04"
-  time_format = "3:04 PM"
+  time_format = "15:04"
 
   # Show estimated reading time for posts?
   reading_time = true
@@ -115,7 +117,7 @@ defaultContentLanguageInSubdir = false
 
   # Enable global LaTeX math rendering?
   #   If false, you can enable it locally on a per page basis.
-  math = false
+  math = true
 
   # Highlight.js options
   #   highlight
@@ -153,7 +155,7 @@ defaultContentLanguageInSubdir = false
 
   # Link custom CSS and JS assets
   #   (relative to /static/css and /static/js respectively)
-  custom_css = ["pink.css"]
+  custom_css = []
   custom_js  = []
 
   # Publication types.
@@ -220,11 +222,6 @@ defaultContentLanguageInSubdir = false
     link = "mailto:jolande.poel@itvitaelearning.nl"
 
   [[params.social]]
-    icon = "twitter"
-    icon_pack = "fa"
-    link = "//twitter.com/jolandepoel"
-
-  [[params.social]]
     icon = "linkedin"
     icon_pack = "fa"
     link = "//linkedin.com/in/jolandepoel"
@@ -238,6 +235,11 @@ defaultContentLanguageInSubdir = false
 	icon = "facebook"
 	icon_pack = "fa"
 	link = "//facebook.com/jolande.poel"
+
+  [[params.social]]
+    icon = "twitter"
+    icon_pack = "fa"
+    link = "//twitter.com/jolandepoel"
 
 
 # Navigation Links
@@ -266,12 +268,12 @@ defaultContentLanguageInSubdir = false
 [[menu.main]]
   name = "Learning"
   url = "#learning"
+  weight = 4
   identifier = "learning"
   
 [[menu.main]]
   name = "Data Science courses"
   url = "#data-science"
-  weight = 4
   parent = "learning"
 
 [[menu.main]]
